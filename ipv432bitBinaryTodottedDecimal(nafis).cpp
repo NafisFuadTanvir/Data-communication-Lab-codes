@@ -17,8 +17,6 @@ int ipv4ToDecimal(long long n){
     
 }
 
-
-
 int main() {
    long long a,b,c,d;
    char dot='.';

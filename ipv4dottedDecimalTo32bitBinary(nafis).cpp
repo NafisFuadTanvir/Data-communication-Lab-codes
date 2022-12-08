@@ -27,7 +27,7 @@ int main() {
     int binaryOfd=convertFunction(d);
     
     
-    cout<<"The binary form of this ipv4 dotted decimals numbers are:-"<<endl<<binaryOfa<<""<<dot<<binaryOfb<<""<<dot<<binaryOfc<<""<<dot<<binaryOfd;
+    cout<<endl<<"The binary form of this ipv4 dotted decimals numbers are:-"<<endl<<endl<<binaryOfa<<""<<dot<<binaryOfb<<""<<dot<<binaryOfc<<""<<dot<<binaryOfd;
   
 
     return 0;
