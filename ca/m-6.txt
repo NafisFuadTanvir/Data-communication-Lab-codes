@@ -1,0 +1,63 @@
+//ipv4 decimal to binary binary to decimal
+
+//decimalto binary
+#include <stdio.h>
+4 #include <math.h>
+5
+6 int convert(int);
+7
+8 int main() {
+9 int n, bin;
+10 printf("Enter a decimal number: ");
+11 scanf("%d", &n);
+12 bin = convert(n);
+13 printf("%d in binary = %d ", n, bin);
+14 return 0;
+15 }
+16
+17 int convert(int n) {
+18 int bin = 0;
+19 int rem, i = 1;
+20
+21 while (n!=0) {
+22 rem = n % 2;
+23 n /= 2;
+24 bin += rem * i;
+
+© Dept. of Computer Science and Engineering, GUB
+
+25 i *= 10;
+26 }
+27
+28 return bin;
+29 }
+
+binary to decimal
+
+#include <stdio.h>
+4 #include <math.h>
+5
+6 // function prototype
+7 int convert(long long);
+8
+9 int main() {
+10 long long n;
+11 printf("Enter a binary number: ");
+12 scanf("%lld", &n);
+13 printf("%lld in decimal : %d", n, convert(n));
+14 return 0;
+15 }
+16
+17 // function definition
+18 int convert(long long n) {
+19 int dec = 0, i = 0, rem;
+20
+21 while (n!=0) {
+22 rem = n % 10;
+23 n /= 10;
+24 dec += rem * pow(2, i);
+25 ++i;
+26 }
+27
+28 return dec;
+29 }
